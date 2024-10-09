@@ -1,0 +1,9 @@
+code#3:
+def display_file_with_line_numbers():
+    file_name = input("Enter the name of the file: ")
+    with open(file_name, "r") as file:
+        lines = file.readlines()
+        for index, line in enumerate(lines, start=1):
+            print(f"{index}. {line}", end="")
+
+display_file_with_line_numbers()
