@@ -1,0 +1,9 @@
+code#2:
+def display_first_five_lines():
+    file_name = input("Enter the name of the file: ")
+    with open(file_name, "r") as file:
+        lines = file.readlines()
+
+        for i in range(min(5, len(lines))):
+            print(lines[i], end="")
+display_first_five_lines()
