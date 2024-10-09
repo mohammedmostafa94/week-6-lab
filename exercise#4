@@ -1,0 +1,10 @@
+code#4:
+def count_names_in_file():
+    file_name = 'names.txt'
+    with open(file_name, 'r') as file:
+        name_count = 0
+        for line in file:
+            name_count += 1
+            print(name_count)
+
+count_names_in_file()
