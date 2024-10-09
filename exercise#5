@@ -1,0 +1,12 @@
+code#5:
+def calculate_totals_from_file():
+    line = []
+    total = 0.0
+    number = 0.0
+    myfile = open('number.txt', 'r')
+    for line in myfile:
+        number = float(line)
+        total += number
+    myfile.close()
+    print("Total: ", total)
+calculate_totals_from_file()
